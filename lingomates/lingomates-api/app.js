@@ -66,6 +66,7 @@ app.use("/community", communityRoutes)
 app.use("/conversationRoutes",conversationRoutes)
 
 app.get("/", function (req, res) {
+    res.send('pong')
     return res.status(200).json({
       ping: "pong",
     })
