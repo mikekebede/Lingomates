@@ -48,7 +48,7 @@ io.on("connection", (socket) => {
   socket.on("disconnect", () => {
   });
 });
-httpServer.listen( "https://lingomatesbackend.onrender.com/", ()=> {
+httpServer.listen( 443 || 80, ()=> {
 });
 
 app.use(cors())
